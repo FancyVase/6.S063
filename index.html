@@ -1,125 +1,154 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clairvoyance</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+
 </head>
 <body>
-  <h1><b><a href="https://docs.google.com/presentation/d/1bgIcKRGMEwQMwggW4bUuMVPKJcZhGxJ740tq_1zx018/edit?usp=sharing">Final Presentation</a></b></h1>
-  <h1><b><a href="https://docs.google.com/presentation/d/1pMqDSWeK4NI5WrCJBy6cyCCyakKV7hc2fNqS13yQcms/edit?usp=sharing">Midterm Presentation</a></b></h1>
-  <h1><b>Project Name:</b> Clairvoyance</h><br>
-    <h2><b>Team Members:</b> Jisoo Min, Hiram Moncivais</h>
-      <h3>Our idea</h3>
-      When people are too focused, they often don't realize others approaching them. 
-      We will create a tool that detects motion, and notifies the user about 
-      someone approaching him/her.
-      The idea can be expanded to people who have visual impairments,
-      and can only see a very narrow window in front of them. We hope to 
-      build something that increases people's field of view.
-
-      <h3>How it works</h3>
-
-      <h3>Video</h3>
-
-      <h3>Photos</h3>
-
-      <h3>Presentation Graphics</h3>
-
-      <h1><b>Project Overview (HW 10)</b></h1>
-      1. We chose to build an assistive technology device that can sense people 
-      approaching from outside the field of view. <br><br>
-      2. How the project fulfills the requirements:
-      <ul>
-        <li> some lasercut/3D printed parts: We will 3D print a casing for our electronics and most of the tangible parts of the project.</li>
-        <li>custom electronics: We will include an infrared sensor, a camera, and a wifi module to transfer the detected data to our server.</li>
-        <li>custom code and data being send via wifi: We will send the movement and face recognition data sensed by the IR sensor and camera via wifi, process it and display it to our user.</li>
-        <li>react to user input: A user will be able to tweak the sensitivity of Clairvoyance. They can specify whether they should be notified when approached from behind, the sides, or both.</li>
-        <li>must solve a real-world problem: People who have impaired vision are shocked when approached from the sides. Similarly, people with regular vision who are focused while working may also be startled when approached from behind. With Clairvoyance, we hope to increase people's field of view. </li>
-
+<!-- Navigation
+    ==========================================-->
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html">Clairvoyance</a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home" class="page-scroll">Home</a></li>
+        <li><a href="#more-section" class="page-scroll">Learn</a></li>
+        <li><a href="#our-process-section" class="page-scroll">Our Process</a></li>
+        <li><a href="https://docs.google.com/presentation/d/1bgIcKRGMEwQMwggW4bUuMVPKJcZhGxJ740tq_1zx018/edit" class="page-scroll">Final Presentation</a></li>
       </ul>
-      3. A clear description of what the final demo will be (what you will show in the last week of the semester): 
-      <ul>
-        <li>A showcase of the different features in Clairvoyance both as an assistive technology and as a sense-enhancing tool.</li>
-      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
 
-      <h1><b>Brainstorming</b></h1>
-      <ul>
-        <li>Top five ideas:</li>
-        <table width="600" border="0" cellpadding="5">
-          <tr>
-            <td align="center" valign="center">
-              <img src="pics/brainstorming/top/1.jpg" alt="pick1" style="width:100%;">
-              <br />
-              #1: Smart Door Sign / Emoji Door Sign
-            </td>
-            <td align="center" valign="center">
-              <img src="pics/brainstorming/top/2.jpg" alt="pick2" style="width:100%;">
-              <br />
-              #2: Sensing Who/What is Behind
-            </td>
-            <td align="center" valign="center">
-              <img src="pics/brainstorming/top/3.jpg" alt="pick3" style="width:100%;">
-              <br />
-              #3: Tool for Learning Foreign Languages
-            </td>
-            <td align="center" valign="center">
-              <img src="pics/brainstorming/top/4.jpg" alt="pick4" style="width:100%;">
-              <br />
-              #4: Weather Sensor on Windows (Decides Whether to Open/Close)
-            </td>
-            <td align="center" valign="center">
-              <img src="pics/brainstorming/top/5.jpg" alt="pick5" style="width:100%;">
-              <br />
-              #5: Music Beacons
-            </td>
-          </tr>
-        </table>
-        <li>All ideas:</li>
-        <table width="600" border="0" cellpadding="5">
-          <tr>
-            <td align="center" valign="center">
-              <img src="pics/brainstorming/brainstorm1.jpg" alt="brainstorm1" style="width:70%;">
-              <br />
-            </td>
-            <td align="center" valign="center">
-              <img src="pics/brainstorming/brainstorm2.jpg" alt="brainstorm2" style="width:100%;">
-              <br />
-            </td>
-          </tr>
-        </table>
-      </ul>
+<!-- Header -->
+<header class="text-center" name="home">
+  <div class="intro-text">
+    <h1>Clairvoyance</h1>
+    <p>Enhancing your sight</p>
+    <a href="#more-section" class="btn btn-default btn-lg page-scroll">LEARN MORE</a> </div>
+</header>
 
-      <h1><b>Weekly Progress Log</b></h><br>
-        <h3>Week #1: Sept. 18 - 24</h3>
-        <ul>
-          <li>Sept. 20: Set up shared spaces (Google Drive, <a href="https://github.com/FancyVase/6.S063">GitHub</a>) as project directory.</li>
-          <li>Sept. 20: Briefly discussed about the project website.</li>
-          <li>Sept. 20: Set up the project website using the provided template. <a href="http://hcie.csail.mit.edu/engineering-interactive-technologies-project-website.html">(HW 4)</a></li>
-        </ul>
-        <h3>Week #2: Sept. 25 - Oct. 1</h3>
-        <ul>
-          <li>Sept. 27: Brainstormed together on the project ideas for 2 hours.</li>
-          <li>Sept. 27: Uploaded all brainstorming ideas on the project website. <a href="http://hcie.csail.mit.edu/engineering-interactive-technologies-best-five-ideas.html">(HW 5)</a></li>
-        </ul>
-        <h3>Week #3: Oct. 2 - 8</h3>
-        <ul>
-          <li>Oct. 8: Prepared the idea presentation for 1 hour.</li> 
-        </ul>
-        <h3>Week #4: Oct. 9 - 15</h3>
-        <ul>
-          <li>Oct. 11: Presented top five ideas to classmates. <a href="https://docs.google.com/presentation/d/1FVJ6TqWknuTnQkmyi32Fir7bSJiNCh3SJKkFs4Z_Srw/edit?usp=sharing">(Google Slides)</a></li> 
-        </ul>
-        <h3>Week #5: Oct. 16 - 22</h3>
-        <ul>
-          <li>Oct. 18: Decided on the idea. (diagram #2 in the brainstorming section)</li>
-          <li>Oct. 18: Added a section to the website for project description. <a href="http://hcie.csail.mit.edu/engineering-interactive-technologies-what-you-will-build.html">(HW 10)</a></li>
-        </ul>
-        <h3>Week #6: Oct. 23 - 29</h3>
-        <h3>Week #7: Oct. 30 - Nov. 5</h3>
-        <h3>Week #8: Nov. 6 - 12</h3>
-        <h3>Week #9: Nov. 13 - 19</h3>
-        <h3>Week #10: Nov. 20 - 26</h3>
-        <h3>Week #11: Nov. 27 - Dec. 3</h3>
-        <h3>Week #12: Dec. 4 - Dec. 10</h3>
-        <h3>Week #13: Dec. 11 - Dec. 17</h3>
+<!-- More Section -->
+<div id="more-section" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Clairvoyance</h2>
+      <hr>
+      <p>When people are too focused, they often don't realize others approaching them. Clairvoyance can sense people approaching from outside the field of view and notify users. Clairvoyance can also be helpful for people with visual impairments.</p>
+    </div>
+    <div class="space"></div>
+    <div class="row">
+      <div class="col-md-4">
+        <i class="fa fa-magic"></i>
+        <h4>Enhanced senses</h4>
+        <p>Clairvoyance gives you a magical sixth sense that tells you when someone's coming.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fa fa-bell-o"></i>
+        <h4>Subtle notifications</h4>
+        <p>When Clairvoyance detects someone approaching, it lightly vibrates to notify the user.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fa fa-arrows-h"></i>
+        <h4>Adjustable build</h4>
+        <p>With our flexible casing built from laser cut plywood, users can adjust Clairvoyance to their preferred shape.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-      </body>
-      </html>
+<div class="section-divider"></div>
+
+<!-- Our Process Section -->
+<div id="our-process-section">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>Our Process</h2>
+      <hr>
+      <div class="clearfix"></div>
+      <p>We developed Clairvoyance over the past semester, following an iterative design process based on brainstorming and prototyping.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6"> <img src="img/our-process.jpg" class="img-responsive"> </div>
+      <div class="col-md-6">
+        <div class="our-process-text">
+          <h4>Week #1: Sept. 18-24</h4>
+          <p>Set up shared spaces (Google Drive, Github), briefly discussed the project website, and set up the project website using the provided template.</p>
+          <h4>Week #2: Sept. 25 - Oct. 1</h4>
+          <p>Brainstormed project ideas together and uploaded them to the website.</p>
+          <h4>Week #3: Oct. 2 - 8</h4>
+          <p>Prepared brainstorming/ideation presentation.</p>
+          <h4>Week #4: Oct. 9 - 15</h4>
+          <p>Presented our <a href="https://docs.google.com/presentation/d/1FVJ6TqWknuTnQkmyi32Fir7bSJiNCh3SJKkFs4Z_Srw/view">top five ideas</a> to the class.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h4>Week #5: Oct. 16 - 22</h4>
+      <p>Lorem ipsum</p>
+      <h4>Week #6: Oct. 23 - 29</h4>
+      <p>Lorem ipsum</p>
+      <h4>Week #7: Oct. 30 - Nov 5</h4>
+      <p>Set-up actionables for our midterm prototype/presentation and ordered electronics.</p>
+      <h4>Week #8: Nov. 6 - 12</h4>
+      <p>Presented our <a href="https://docs.google.com/presentation/d/1pMqDSWeK4NI5WrCJBy6cyCCyakKV7hc2fNqS13yQcms/view">midterm update</a> - focused on our first prototype - to the class.</p>
+      <h4>Week #9: Nov. 13 - 19</h4>
+      <p>Ordered additional materials for final product, such as a longer range infrared sensor.</p>
+      <h4>Week #10: Nov. 20 - 26</h4>
+      <p>Lorem ipsum</p>
+      <h4>Week #11: Nov. 27 - Dec 3</h4>
+      <p>Lorem ipsum</p>
+      <h4>Week #12: Dec. 4 - 10</h4>
+      <p>Worked on WiFi communication for Clairvoyance.</p>
+      <h4>Week #13: Dec. 11 - 17</h4>
+      <p><a href="https://docs.google.com/presentation/d/1bgIcKRGMEwQMwggW4bUuMVPKJcZhGxJ740tq_1zx018/view">Final presentation</a> on Clairvoyance.</p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="section-divider"></div>
+<div id="footer">
+  <div class="container">
+    <div class="fnav">
+      <p>Original design by <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/jquery.counterup.js"></script> 
+<script type="text/javascript" src="js/waypoints.js"></script> 
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+
+<!-- Javascript
+    ================================================== --> 
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
