@@ -232,3 +232,10 @@ label {
 .btn {
 	border-radius: 0 !important;
 }
+
+@media (min-width: 1500px) {
+	header {
+		background: url(../img/header-bg.jpg) no-repeat center center;
+		background-size: cover;
+	}
+}
