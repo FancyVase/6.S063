@@ -15,6 +15,7 @@ h2 {
 	font-weight: 700;
 	margin: 0;
 	color: #555;
+	padding-bottom: 20px;
 }
 h3 {
 	font-size: 16px;
@@ -60,7 +61,7 @@ hr {
 	transition: all 0.8s;
 }
 #menu.navbar-default {
-	background-color: rgba(248, 248, 248, 0);
+	background-color: rgba(0, 0, 0, 0.2);
 	border-color: rgba(231, 231, 231, 0);
 }
 #menu a.navbar-brand {
@@ -102,7 +103,7 @@ hr {
 }
 /* Home Style */
 header {
-	background: url(../img/header-bg.jpg) no-repeat bottom right;
+	background: url(../img/header-bg.jpg) no-repeat top center;
 	background-size: cover;
 	color: #cfcfcf;
 	position: relative;
@@ -120,16 +121,21 @@ header p {
 	padding-left: 0;
 	padding-bottom: 170px;
 }
-.intro-text H1 {
+.intro-text h1 {
 	font-size: 60px;
 	text-transform: uppercase;
-	color: #fff;
+	color: #000;
 }
+
+.intro-text p {
+	color: #000;
+}
+
 .btn-default {
-	color: #fff;
+	color: #000;
 	font-family: 'Open Sans', sans-serif;
 	background-color: transparent;
-	border: 2px solid rgba(255,255,255,0.8);
+	border: 2px solid rgba(0,0,0,0.7);
 	margin: 0 8px;
 	padding: 12px 24px;
 	font-size: 16px;
@@ -157,6 +163,12 @@ header p {
 	margin-bottom: 20px;
 	transition: all 0.5s;
 	color: #0dbf9b;
+}
+
+.rotoscope {
+	width: 450px;
+	margin: 0 auto;
+	padding: 20px 0;
 }
 
 /* Our Process Section */
