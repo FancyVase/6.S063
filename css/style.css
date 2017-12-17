@@ -165,6 +165,38 @@ header p {
 	color: #0dbf9b;
 }
 
+/* Video Section */
+#video-section {
+	padding: 120px 0;
+	background-color: #fff;
+}
+#video-section h4 {
+	font-weight: 700;
+}
+#video-section i.fa {
+	font-size: 40px;
+	margin-bottom: 20px;
+	transition: all 0.5s;
+	color: #0dbf9b;
+}
+
+/* Photos Section */
+#photos-section {
+	padding: 120px 0;
+	background-color: #fff;
+}
+#photos-section h4 {
+	font-weight: 700;
+}
+#photos-section i.fa {
+	font-size: 40px;
+	margin-bottom: 20px;
+	transition: all 0.5s;
+	color: #0dbf9b;
+}
+
+
+
 .rotoscope {
 	width: 450px;
 	margin: 0 auto;
